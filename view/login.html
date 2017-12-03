@@ -1,8 +1,18 @@
 <html>
     <head>
         <title>login.html</title>
+        <link rel="stylesheet" href="css/formStyle.css">
     </head>
     <body>
-        login page
+            <form action="loginCheck.html" id="loginForm" method="post">
+                    <fieldset><legend>로그인</legend><p>
+                        <div><label for="id" >ID </label>
+                        <input type = "text" id = "id" name="id" required></div>
+                        <input type="hidden"  id = "encryptionID" name="encryptionID">
+                        <div><label for="pw">PW </label>
+                        <input type = "password" id="pw" name = "pw" required></div>
+                        <input type="submit" value="로그인" id="submit"><input type="button" value="취소" id="cancel">
+                    </fieldset>
+                </form>	
     </body>
 </html>
